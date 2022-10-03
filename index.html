@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./font-awesome.css">
+    <title>Music_player
+    </title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="Music_player">
+
+            <!-- disk image is here -->
+            <div class="image">
+                <img src="https://i.pinimg.com/236x/4f/ad/08/4fad08a1685716666ce0454b2feaa6df.jpg" id="diskimg"
+                    onclick="spin()" />
+            </div>
+
+            <!-- music title  -->
+            <div class="M-title">
+
+                <h1 id="song-name">Main Tumhara </h1>
+                <p class="singer" id="singer">
+                    singer: A. R. Rahman , Jonita Gandhi
+                </p>
+            </div>
+
+            <!-- Audio section -->
+            <audio id="myAudio1"
+                src="https://pagalsong.in/uploads/systemuploads/mp3/Dil Bechara/Main Tumhara - Dil Bechara 128 Kbps.mp3"></audio>
+            <!-- <source  id="audiosrc"  src="" type="audio/mp3"> -->
+            <hr>
+
+
+            <!-- Audio controls -->
+            <div class="controls">
+                <img src="https://img.icons8.com/ios-glyphs/40/000000/skip-to-start--v2.png" class="controlImg"
+                    id="previous" />
+
+                <!-- play btn-->
+                <img src="https://img.icons8.com/ios-glyphs/50/000000/play--v2.png" class="play" id="play"
+                    onclick="playf()" />
+
+                <!-- pause btn -->
+                <img src="https://img.icons8.com/android/50/000000/pause.png" id="pause" class="pause"
+                    onclick="pausef()" />
+
+                <img src="https://img.icons8.com/ios-glyphs/40/000000/end--v1.png" class="controlImg" id="next"
+                    onclick="nexts()" />
+
+            </div>
+        </div>
+        <div class="Music_playlist">
+
+
+            <div class="Musiclist-item" id="Music-1" onclick="music('Music-1')">
+
+                <p id="para1">Husnn Hai Suhaana</p>
+                <span id="singer-name-1"> singer : Abhijeet , Chandana Dixit
+                </span>
+            </div>
+            <div class="Musiclist-item" id="Music-2" onclick="music('Music-2')">
+                <p id="para2">Mirchi Lagi Toh </p>
+                <span id="singer-name-2"> singer : Kumar Sanu, Alka Yagnik</span>
+            </div>
+            <div class="Musiclist-item" id="Music-3" onclick="music('Music-3')">
+                <p id="para3">Main Tumhara</p>
+                <span id="singer-name-3"> singer : A. R. Rahman , Jonita Gandhi</span>
+            </div>
+            <div class="Musiclist-item" id="Music-4" onclick="music('Music-4')">
+                <p id="para4">Paani Paani</p>
+                <span id="singer-name-4"> singer : Badshah,Aastha Gill</span>
+            </div>
+            <div class="Musiclist-item" id="Music-5" onclick="music('Music-5')">
+                <p id="para5">Sawan Mein Lag Gayi Aag</p>
+                <span id="singer-name-5"> singer : Neha Kakkar, Badshah</span>
+            </div>
+            <div class="Musiclist-item" id="Music-6" onclick="music('Music-6')">
+                <p id="para6">Chammo </p>
+                <span id="singer-name-6"> singer : Sukhwinder Singh, Shadab Faridi</span>
+            </div>
+            <div class="Musiclist-item" id="Music-7" onclick="music('Music-7')">
+                <p id="para7">Shaitan Ka Saala</p>
+                <span id="singer-name-7"> singer : Sohail Sen, Vishal Dadlani</span>
+            </div>
+            <div class="Musiclist-item" id="Music-8" onclick="music('Music-8')">
+                <p id="para8">O Saki Saki</p>
+                <span id="singer-name-8"> singer : Neha Kakkar, B Praak</span>
+            </div>
+            <div class="Musiclist-item" id="Music-9" onclick="music('Music-9')">
+                <p id="para9">First Class</p>
+                <span id="singer-name-9"> singer : Arijit Singh, Neeti Mohan</span>
+            </div>
+            <div class="Musiclist-item" id="Music-10" onclick="music('Music-10')">
+                <p id="para10">Teri Mitti</p>
+                <span id="singer-name-10"> singer : B Praak</span>
+            </div>
+        </div>
+        <p id="crname">created by harsh goswami</p>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
